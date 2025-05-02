@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>テキスト整形ツール</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>テキスト整形ツール</h1>
+
+  <label for="input-text">入力テキスト</label>
+  <textarea id="input-text" placeholder="ここにテキストを貼り付け"></textarea>
+
+  <label for="final">変換後</label>
+  <textarea id="final" readonly></textarea>
+
+  <hr>
+  <div class="centering">↓変換過程↓</div>
+  <hr>
+
+  <label for="first">入力テキスト</label>
+  <textarea id="first" readonly></textarea>
+
+  <label for="withPlaceholderForBlankLines">空行保持トークン生成</label>
+  <textarea id="withPlaceholderForBlankLines" readonly></textarea>
+
+  <label for="noLineBreaks">改行削除</label>
+  <textarea id="noLineBreaks" readonly></textarea>
+
+  <label for="withBlankLinesRestored">空行復活</label>
+  <textarea id="withBlankLinesRestored" readonly></textarea>
+
+  <label for="splitAtPeriod">文末で改行</label>
+  <textarea id="splitAtPeriod" readonly></textarea>
+
+  <label for="splitAtComma">文中で改行＋タブ</label>
+  <textarea id="splitAtComma" readonly></textarea>
+
+</body>
+<script src="./app.js"></script>
+</html>
