@@ -36,7 +36,7 @@ input.addEventListener("input", () => {
   withBlankLinesRestored.value = withBlankLinesRestoredText;
 
   // ピリオド・句点で改行
-  const splitAtPeriodText = noLineBreaksText
+  const splitAtPeriodText = withBlankLinesRestoredText
     .replace(/([^.。．\n]{32,})\. (?=[^0-9])/g, "$1.\n")
     //    .replace(/\. (?=[^0-9])/g, '.\n')
     .replace(/。/g, "。\n")
